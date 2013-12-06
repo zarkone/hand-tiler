@@ -1,0 +1,40 @@
+* hand-tiler
+
+Manual, key-driven tiling for Awesome WM. Works only when "float"
+layout is active.
+
+** Install
+
+Download module to awesome wm configuration directory:
+#+BEGIN_SRC bash
+cd ~/.config/awesome/
+git clone git@github.com:zarkone/hand-tiler.git
+$EDITOR rc.lua
+#+END_SRC
+
+Edit *rc.lua* as follows:
+
+#+BEGIN_SRC lua
+-- Load module 
+handTiler = require("hand-tiler")
+
+-- Add key definitions in client keys array
+clientkeys = awful.util.table.join(
+
+    -- ...
+    awful.key({ modkey,           },  "[",     function (c) handTiler.tileTo(c, 'left')         end),
+    awful.key({ modkey,           },  "]",     function (c) handTiler.tileTo(c, 'right')        end),
+    awful.key({ modkey, "Control" },  "[",     function (c) handTiler.tileTo(c, 'left-top')     end),
+    awful.key({ modkey, "Shift"   },  "[",     function (c) handTiler.tileTo(c, 'left-bottom')  end),
+    awful.key({ modkey, "Control" },  "]",     function (c) handTiler.tileTo(c, 'right-top')    end),
+    awful.key({ modkey,  "Shift"  },  "]",     function (c) handTiler.tileTo(c, 'right-bottom') end),
+    
+    awful.key({ modkey, "Control", "Shift" },   "[",     function (c) handTiler.tileTo(c, 'top')    end),
+    awful.key({ modkey, "Control", "Shift"  },  "]",     function (c) handTiler.tileTo(c, 'bottom') end),
+    -- ...
+
+)
+#+END_SRC
+
+
+

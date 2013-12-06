@@ -1,7 +1,7 @@
 * hand-tiler
 
 Manual, key-driven tiling for Awesome WM. Works only when "float"
-layout is active.
+layout is active. It's simular to Aero Snap in windows and Grid plugin in Compiz
 
 ** Install
 

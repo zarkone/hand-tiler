@@ -31,6 +31,8 @@ clientkeys = awful.util.table.join(
     
     awful.key({ modkey, "Control", "Shift" },   "[",     function (c) handTiler.tileTo(c, 'top')    end),
     awful.key({ modkey, "Control", "Shift"  },  "]",     function (c) handTiler.tileTo(c, 'bottom') end),
+
+    awful.key({ modkey,           },  "'",     function (c) handTiler.tileTo(c, 'full')         end),
     -- ...
 
 )

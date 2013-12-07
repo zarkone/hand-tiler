@@ -55,6 +55,12 @@ function tileTo(c, sector)
       width = screengeom.width,
       height = screengeom.height / 2
    }
+   geometrySet['full'] = {
+      x = screengeom.x,
+      y =  screengeom.y,
+      width = screengeom.width,
+      height = screengeom.height
+   }
    
    c:geometry(geometrySet[sector])
    

@@ -1,6 +1,7 @@
-* hand-tiler
+Awesome WM manual tiling
 
-Manual, key-driven tiling for Awesome WM. Works only when "float"
+Awesome WM manual tiling extension. It's simular to Aero Snap in windows and Grid plugin in Compiz.
+Works only when "float"
 layout is active. It's simular to Aero Snap in windows and Grid plugin in Compiz
 
 ** Install

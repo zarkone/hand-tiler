@@ -1,8 +1,7 @@
 * Awesome WM manual tiling
 
 Awesome WM manual tiling extension. It's simular to Aero Snap in windows and Grid plugin in Compiz.
-Works only when "float"
-layout is active. It's simular to Aero Snap in windows and Grid plugin in Compiz
+Works only when "float" layout is active.
 
 ** Install
 
